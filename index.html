@@ -10,12 +10,14 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+
+    <form>
         <header>
             <h1>Sign up for Whoo!</h1>
             <p>50 projects, 500 images, 10 videos, domain binding, and technical support.</p>
         </header>
         <fieldset>
-            <legend>1<span>First, name your portfolios</span></legend>
+            <legend><span>1 First, name your portfolios</span></legend>
             <ol>
                 <li>
                     <label for="portfolio_title">Portfolio title</label>
@@ -25,8 +27,9 @@
                     <label for="portfolio_address">Portfolio address<span>.sample.com</span></label>
                     <input id="portfolio_address" />
                 </li>
+        </fieldset>
             <fieldset>
-                <legend>2<span>Now, enter your account details</span></legend>
+                <legend><span>2 Now, enter your account details</span></legend>
                 <ol>
                     <li>
                         <label for="name">Name</label>
@@ -43,7 +46,7 @@
                 </ol>
             </fieldset>
             <fieldset>
-                <legend>3<span>Finally, enter your payment information</span></legend>
+                <legend><span>3 Finally, enter your payment information</span></legend>
                 <p id="paypal">PayPal</p>
                 <ol>
                     <li>
@@ -57,6 +60,7 @@
                 </ol>
                 <legend>Expiration Date</legend>
                 <select name="month">
+                    <option selected="selected">Month</option>
                     <option value="january">January</option>
                     <option value="february">February</option>
                     <option value="march">March</option>
@@ -71,6 +75,7 @@
                     <option value="december">December</option>
                 </select>
                 <select name="year">
+                    <option selected="selected">Year</option>
                     <option value="2013">2013</option>
                     <option value="2014">2014</option>
                     <option value="2015">2015</option>
@@ -78,17 +83,10 @@
                 </select>
             </fieldset>
             <button id="button" type="submit">Button</button>
-        </fieldset>
-
+    </form>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>
