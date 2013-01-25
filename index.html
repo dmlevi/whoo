@@ -52,12 +52,14 @@
                 <ol>
                     <li>
                         <label for="card_number">Card Number</label>
-                        <input id="card_number" />
+                        <input id="card_number" class="card"/>
                     </li>
+                    <div id="cards"></div>
                     <li>
                         <label for="security_code">Security Code</label>
-                        <input id="security_code" />
+                        <input id="security_code" class="code"/>
                     </li>
+                    <div id="csv"></div>
                 </ol>
                 <legend>Expiration Date</legend>
                 <select name="month">
@@ -97,7 +99,6 @@
                     <option value="2030">2030</option>
                 </select>
             </fieldset>
-            <div id="cards"></div>
             <button id="button" type="submit">Create your portfolio</button>
     </form>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>

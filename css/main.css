@@ -229,7 +229,6 @@ textarea {
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
@@ -372,6 +371,13 @@ fieldset label {
     color: #5A5A5A;
 }
 
+fieldset input.card {
+    width: 205px;
+}
+
+fieldset input.code {
+    width: 70px;
+}
 
 fieldset input {
     width: 440px;
@@ -397,7 +403,16 @@ fieldset legend span {
 
 h2 {
     color: #125F78;
-    display: inline;
+    font-size: 20px;
+    margin: 0;
+}
+
+legend h2 {
+    position: relative;
+    top: -34px;
+    left: 0px;
+    color: #2b5268;
+    font-family: "Antic Slab", helvetica, san-seriff;
     font-size: 20px;
 }
 
@@ -415,8 +430,17 @@ ol, li input{
     background-repeat: no-repeat;
     background-position: 0 -122px;
     position: relative;
-    bottom: 20px;
-    left: 300px;
+    bottom: 35px;
+    left: 216px;
+}
+
+#csv {
+    background: url('../img/sprite.png') no-repeat 0 -374px;
+    width: 62px;
+    height: 32px;
+    position: relative;
+    bottom: 35px;
+    left: 82px;
 }
 
 #button {
@@ -434,4 +458,6 @@ ol, li input{
     border-top: 1px solid #AABD62;
     color: white;
     padding: 12px 25px;
+    margin: 20px auto;
+    display: block;
 }
