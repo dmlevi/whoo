@@ -407,6 +407,14 @@ h2 {
     margin: 0;
 }
 
+#paypal {
+    position: relative;
+    bottom: 58px;
+    left: 465px;
+    text-decoration: none;
+    color: #45BFEA;
+}
+
 legend h2 {
     position: relative;
     top: -34px;
