@@ -338,6 +338,12 @@ header {
 
 }
 
+header p {
+    color: #45BFEA;
+    font-size: 10px;
+    margin: 0;
+}
+
 h1 {
     color: white;
     font-family: 'Antic Slab', serif;
@@ -345,31 +351,43 @@ h1 {
     margin: 0;
 }
 
-header p {
-    color: #45BFEA;
-    font-size: 10px;
-    margin: 0;
+h2 {
+    margin: 30px 0 0 -35px;
+    padding: 0;
+    color: #125F78;
+    font-size: 20px;
+    color: #2b5268;
+    font-family: 'Antic Slab', serif;
 }
 
 form {
     width: 600px;
     margin: 0 auto;
     background: white;
+    padding-bottom: 10px;
 }
 
 fieldset {
     width: 520px;
-    margin: auto;
+    margin: 0 auto;
+}
+
+ol {
     background: #F3F5F5;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+    margin: 0;
+    padding: 30px 35px;
 }
 
-fieldset label {
+
+label {
+    display: block;
     font-size: 12px;
     color: #5A5A5A;
 }
+
 
 fieldset input.card {
     width: 205px;
@@ -384,11 +402,14 @@ fieldset input {
     height: 30px;
 }
 
-label {
-    display: block;
+#paypal {
+    position: relative;
+    left: 465px;
+    text-decoration: none;
+    color: #45BFEA;
 }
 
-fieldset legend span {
+span.number {
     color: white;
     background-color: #52A3D4; border: 5px solid white;
     display: inline-block;
@@ -397,31 +418,8 @@ fieldset legend span {
     border-radius: 28px;
     font-size: 20px;
     position: relative;
-    left: -60px;
+    left: -24px;
     text-align: center;
-}
-
-h2 {
-    color: #125F78;
-    font-size: 20px;
-    margin: 0;
-}
-
-#paypal {
-    position: relative;
-    bottom: 58px;
-    left: 465px;
-    text-decoration: none;
-    color: #45BFEA;
-}
-
-legend h2 {
-    position: relative;
-    top: -34px;
-    left: 0px;
-    color: #2b5268;
-    font-family: "Antic Slab", helvetica, san-seriff;
-    font-size: 20px;
 }
 
 ol, li input{
@@ -429,6 +427,15 @@ ol, li input{
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+}
+
+#sample {
+    background: #FAFAFA;
+    position: relative;
+    color: grey;
+    padding: 10px;
+    top: 25px;
+    left: 200px;
 }
 
 #cards {
@@ -449,6 +456,16 @@ ol, li input{
     position: relative;
     bottom: 35px;
     left: 82px;
+}
+
+#lock {
+    background: url('../img/sprite.png') no-repeat -60px -499px;
+    width: 14px;
+    height: 19px;
+    position: relative;
+    left: 460px;
+    top: 20px;
+
 }
 
 #button {

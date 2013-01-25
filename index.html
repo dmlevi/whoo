@@ -17,20 +17,20 @@
             <p>50 projects, 500 images, 10 videos, domain binding, and technical support.</p>
         </header>
         <fieldset>
-            <legend><span>1</span><h2>First, name your portfolios</h2></legend>
+            <h2><span class="number">1</span>First, name your portfolios</h2>
             <ol>
                 <li>
                     <label for="portfolio_title">Portfolio title</label>
                     <input id="portfolio_title" />
                 </li>
                 <li>
-                    <label for="portfolio_address">Portfolio address<span>.sample.com</span></label>
+                    <label for="portfolio_address">Portfolio address<span id="sample">.sample.com</span></label>
                     <input id="portfolio_address" />
                 </li>
             </ol>
         </fieldset>
             <fieldset>
-                <legend><span>2</span><h2>Now, enter your account details</h2></legend>
+                <h2><span class="number">2</span>Now, enter your account details</h2>
                 <ol>
                     <li>
                         <label for="name">Name</label>
@@ -47,7 +47,7 @@
                 </ol>
             </fieldset>
             <fieldset>
-                <legend><span>3</span><h2>Finally, enter your payment information</h2></legend>
+               <h2><span class="number">3</span>Finally, enter your payment information</h2>
                 <a href="http://www.paypal.com/" id="paypal">PayPal</a>
                 <ol>
                     <li>
@@ -60,7 +60,6 @@
                         <input id="security_code" class="code"/>
                     </li>
                     <div id="csv"></div>
-                </ol>
                 <label>Expiration Date</label>
                 <select name="month">
                     <option selected="selected" disabled="disabled">Month</option>
@@ -98,6 +97,8 @@
                     <option value="2029">2029</option>
                     <option value="2030">2030</option>
                 </select>
+                <div id="lock"></div>
+                </ol>
             </fieldset>
             <button id="button" type="submit">Create your portfolio</button>
     </form>
