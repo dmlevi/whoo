@@ -388,6 +388,10 @@ label {
     color: #5A5A5A;
 }
 
+fieldset input {
+    width: 440px;
+    height: 30px;
+}
 
 fieldset input.card {
     width: 205px;
@@ -397,9 +401,8 @@ fieldset input.code {
     width: 70px;
 }
 
-fieldset input {
-    width: 440px;
-    height: 30px;
+#portfolio_address {
+    width: 290px; 
 }
 
 #paypal {

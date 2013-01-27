@@ -100,18 +100,6 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -351,7 +339,7 @@ h1 {
     margin: 0;
 }
 
-h2 {
+legend {
     margin: 30px 0 0 -35px;
     padding: 0;
     color: #125F78;
@@ -372,7 +360,7 @@ fieldset {
     margin: 0 auto;
 }
 
-ol {
+ul {
     background: #F3F5F5;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -389,7 +377,7 @@ label {
 }
 
 
-fieldset input.card {
+fieldset input#card_number {
     width: 205px;
 }
 
@@ -422,7 +410,7 @@ span.number {
     text-align: center;
 }
 
-ol, li input{
+ul, li input{
     list-style: none;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -433,9 +421,10 @@ ol, li input{
     background: #FAFAFA;
     position: relative;
     color: grey;
-    padding: 10px;
-    top: 25px;
-    left: 200px;
+    top: -34px;
+    left: 292px;
+    width: 150px;
+    border: none;
 }
 
 #cards {
@@ -446,7 +435,19 @@ ol, li input{
     background-position: 0 -122px;
     position: relative;
     bottom: 35px;
-    left: 216px;
+    left: 240px;
+}
+
+input[class="valid"]:valid {
+    background: url('../img/sprite.png') no-repeat -31px -499px;
+    width: 19px;
+    height: 19px;
+}
+
+input[class="invalid"]:invalid {
+    background: url('../img/sprite.png') no-repeat -2px -499px;
+    width: 19px;
+    height: 19px;    
 }
 
 #csv {
