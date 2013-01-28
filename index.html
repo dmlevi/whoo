@@ -16,15 +16,12 @@
                 <ul>
                     <li>
                         <label for="portfolio_title">Portfolio title</label>
-                        <input id="portfolio_title" tabindex="1" type="text" name="portfolio_title" aria-required="true" required/>
+                        <input id="portfolio_title" tabindex="1" type="text" name="portfolio_title" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
                     </li>
                     <li>
                         <label for="portfolio_address">Portfolio address</label>
-                        <input id="portfolio_address" tabindex="2" type="text" name="portfolio_address" aria-required="true" required/>
-                    </li>
-                    <li>
-                        <label for="sample" aria-hidden="true">.sample.com</label>
-                        <input type="text" id="sample" name="sample" tabindex="3" aria-required="true" required/>
+                        <label for="portfolio_address" id="label_sample">.sample.com</label>
+                        <input id="portfolio_address" tabindex="2" type="text" name="portfolio_address" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
                     </li>
                 </ul>
             </fieldset>
@@ -33,7 +30,7 @@
                 <ul>
                     <li>
                         <label for="name">Name</label>
-                        <input id="name" type="text" tabindex="4" name="name" aria-required="true" required/>
+                        <input id="name" type="text" tabindex="4" name="name" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
                     </li>
                     <li>
                         <label for="email">Email</label>
@@ -41,7 +38,7 @@
                     </li>
                     <li>
                         <label for="password">Password</label>
-                        <input id="password" type="password" name="password" tabindex="6" aria-required="true" required/>
+                        <input id="password" type="password" name="password" tabindex="6" aria-required="true" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
                     </li>
                 </ul>
             </fieldset>
@@ -57,7 +54,7 @@
                     <div class="valid" "invalid"></div>
                     <li>
                         <label for="security_code">Security Code</label>
-                        <input id="security_code" class="code" tabindex="8" aria-required="true" required/>
+                        <input id="security_code" class="code" tabindex="8" aria-required="true" required pattern="[0-9]{3,4}"/>
                     </li>
                     <div id="csv" alt="back of credit card showing where the csv is located"></div>
                     <label>Expiration Date</label>
@@ -104,6 +101,7 @@
         </form>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>
