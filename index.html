@@ -30,12 +30,12 @@
                 <ul>
                     <li>
                         <label for="portfolio_title">Portfolio title</label>
-                        <input id="portfolio_title" tabindex="1" type="text" name="portfolio_title" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
+                        <input id="portfolio_title" type="text" name="portfolio_title" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
                     </li>
                     <li>
                         <label for="portfolio_address">Portfolio address</label>
                         <label for="portfolio_address" id="label_sample">.sample.com</label>
-                        <input id="portfolio_address" tabindex="2" type="text" name="portfolio_address" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
+                        <input id="portfolio_address" type="text" name="portfolio_address" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
                     </li>
                 </ul>
             </fieldset>
@@ -44,16 +44,16 @@
                 <ul>
                     <li>
                         <label for="name">Name</label>
-                        <input id="name" type="text" tabindex="4" name="name" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
+                        <input id="name" type="text" name="name" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input id="email" type="email" name="email" tabindex="5" aria-required="true" required/>
+                        <input id="email" type="email" name="email" aria-required="true" required/>
                     </li>
-                    <p id="note">NOTE: We'll never share your email, promise</p>
+                    <p class="note">NOTE: We'll never share your email, promise</p>
                     <li>
                         <label for="password">Password</label>
-                        <input id="password" type="password" name="password" tabindex="6" aria-required="true" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
+                        <input id="password" type="password" name="password" aria-required="true" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
                     </li>
                 </ul>
             </fieldset>
@@ -63,29 +63,27 @@
                 <ul>
                     <li>
                         <label for="card_number">Card Number</label>
-                        <input id="card_number" name="card number" type="text" pattern="[0-9]{13,16}" tabindex="7" aria-required="true" required/>
+                        <input id="card_number" name="card number" type="text" pattern="[0-9]{13,16}" aria-required="true" required/>
                     </li>
                     <div class="cards">
-                        <label for="creditcard" class="amex"><span>Amex</span>
-                            <input type="radio" id="amex" name="amex" value="amex">
-                        </label>
-                        <label for="creditcard"><span>Visa</span>
-                            <input type="radio" name="visa" id="visa" value="visa">
-                        </label>
-                        <label for="creditcard" id="discover"><span>Discover</span>
-                            <input type="radio" name="amex" value="discover" id="discover">
-                        </label>
-                        <label for="creditcard" id="mastercard"></label>
-                        <input type="radio" name="amex" value="mastercard" id="mastercard"></input>
+                        <p class="note">Select your card</p>
+                        <input type="radio" id="amex" name="creditcard" value="amex">
+                        <label for="amex" class="amex">amex</label>
+                        <input type="radio" name="creditcard" id="visa" value="visa">
+                        <label for="visa" class="visa">visa</label>
+                        <input type="radio" name="creditcard" id="discover" value="discover" id="discover">
+                        <label for="discover" class="discover">discover</label>
+                        <input type="radio" name="creditcard" value="mastercard" id="mastercard">
+                        <label for="mastercard" class="mastercard">mastercard</label>
                     </div>
                     <div class="valid" "invalid"></div>
                     <li class="cf">
                         <label for="security_code">Security Code</label>
-                        <input id="security_code" class="code" tabindex="8" aria-required="true" required pattern="[0-9]{3,4}"/>
+                        <input id="security_code" class="code" aria-required="true" required pattern="[0-9]{3,4}"/>
                     </li>
                     <div id="csv" alt="back of credit card showing where the csv is located"></div>
                     <label>Expiration Date</label>
-                    <select name="month" tabindex="9" aria-required="true" required>
+                    <select name="month" aria-required="true" required>
                         <option selected="selected" disabled="disabled">Month</option>
                         <option value="january">January</option>
                         <option value="february">February</option>
@@ -100,7 +98,7 @@
                         <option value="november">November</option>
                         <option value="december">December</option>
                     </select>
-                    <select name="year" tabindex="10" aria-required="true" required>
+                    <select name="year"  aria-required="true" required>
                         <option selected="selected" disabled="disabled">Year</option>
                         <option value="2013">2013</option>
                         <option value="2014">2014</option>
@@ -124,7 +122,7 @@
                     <div id="lock" alt="icon of lock demonstrating security"></div>
                 </ul>
             </fieldset>
-            <button id="button" type="submit" name="submit" value="create your portfolio" tabindex="11">Create your portfolio </button>
+            <button id="button" type="submit" name="submit" value="create your portfolio" >Create your portfolio </button>
         </form>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
