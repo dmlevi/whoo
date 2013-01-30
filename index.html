@@ -4,6 +4,20 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script>
+            Modernizr.load({
+                      Test          :               Modernizr.localstorage,
+                      Yep           :               'localstorage.js',
+                      Nope          :               'localstorage-alternative.js'
+
+            });
+
+            yepnope({
+                              Test          :               Modernizr.localstorage,
+                              Yep           :               'localstorage.js',
+                              Nope          :               'localstorage-alternative.js'
+            });
+        </script>
     </head>
     <body>
         <form role="main" id="form">
@@ -51,9 +65,21 @@
                         <label for="card_number">Card Number</label>
                         <input id="card_number" name="card number" type="text" pattern="[0-9]{13,16}" tabindex="7" aria-required="true" required/>
                     </li>
-                    <div id="cards" alt="credit cards"></div>
+                    <div class="cards">
+                        <label for="creditcard" class="amex"><span>Amex</span>
+                            <input type="radio" id="amex" name="amex" value="amex">
+                        </label>
+                        <label for="creditcard"><span>Visa</span>
+                            <input type="radio" name="visa" id="visa" value="visa">
+                        </label>
+                        <label for="creditcard" id="discover"><span>Discover</span>
+                            <input type="radio" name="amex" value="discover" id="discover">
+                        </label>
+                        <label for="creditcard" id="mastercard"></label>
+                        <input type="radio" name="amex" value="mastercard" id="mastercard"></input>
+                    </div>
                     <div class="valid" "invalid"></div>
-                    <li>
+                    <li class="cf">
                         <label for="security_code">Security Code</label>
                         <input id="security_code" class="code" tabindex="8" aria-required="true" required pattern="[0-9]{3,4}"/>
                     </li>

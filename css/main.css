@@ -414,6 +414,86 @@ span.number {
     text-align: center;
 }
 
+.cards {
+    float: right;
+}
+
+.cf {
+    clear:both;
+}
+
+input[type="radio"] {
+    width: 50px;
+    height: 32px;
+    margin: 0;
+}
+
+.cards label {
+    position: absolute;
+    display: inline-block;
+    height:;
+}
+
+.amex  {
+    background: url('../img/sprite.png') no-repeat 0 -122px;
+    width: 45px;
+    height: 32px;
+    opacity: .7;
+}
+
+.cards label#visa {
+    background: url('../img/sprite.png') no-repeat -48px -122px;
+    width: 45px;
+    height: 32px;
+    opacity: .7;
+}
+
+.cards label#discover {
+    background: url('../img/sprite.png') no-repeat -96px -122px;
+    width: 45px;
+    height: 32px;
+    opacity: .7;
+}
+
+.cards label#mastercard {
+    background: url('../img/sprite.png') no-repeat -144px -122px;
+    width: 45px;
+    height: 32px;
+    opacity: .7;
+}
+
+/***********active***********/
+
+
+.amex input:checked  {
+    background: url('../img/sprite.png') no-repeat 0 -122px;
+    width: 45px;
+    height: 32px;
+    opacity: 1.0;
+}
+
+.cards label#visa:checked {
+    background: url('../img/sprite.png') no-repeat -48px -122px;
+    width: 45px;
+    height: 32px;
+    opacity: 1.0;
+}
+
+.cards label#discover:checked {
+    background: url('../img/sprite.png') no-repeat -96px -122px;
+    width: 45px;
+    height: 32px;
+    opacity: 1.0;
+}
+
+.cards label#mastercard:checked {
+    background: url('../img/sprite.png') no-repeat -144px -122px;
+    width: 45px;
+    height: 32px;
+    opacity: 1.0;
+}
+
+
 ul, li input{
     list-style: none;
     -webkit-border-radius: 4px;
