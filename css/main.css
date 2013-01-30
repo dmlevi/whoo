@@ -396,6 +396,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     color: #72D0FF;
     font-size: 12px;
 }
+
 .note {
     color: #A2A2B4;
     font-size: 11px;
@@ -416,19 +417,6 @@ input[type="text"], input[type="email"], input[type="password"] {
     text-align: center;
 }
 
-/*
-input[type="radio"] {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-*/
-
 .cf {
     clear:both;
 }
@@ -446,8 +434,6 @@ input[type="radio"] {
     display: inline-block;
     text-indent: -9999px;
 }
-
-
 
 .amex {
     background: url('../img/sprite.png') no-repeat 0 -206px;
