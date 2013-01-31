@@ -422,7 +422,14 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 input[type="radio"] {
-    display: none;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 .cards {
@@ -490,6 +497,10 @@ ul, li input{
     border-radius: 4px;
 }
 
+label.error {
+    position: relative;
+}
+
 #label_sample {
     background: #FAFAFA;
     position: absolute;
@@ -515,15 +526,9 @@ ul, li input{
 }
 
 input[class="valid"]:valid {
-    background: url('../img/sprite.png') no-repeat -31px -499px;
-    width: 19px;
-    height: 19px;
 }
 
 input[class="invalid"]:invalid {
-    background: url('../img/sprite.png') no-repeat -2px -499px;
-    width: 19px;
-    height: 19px;
 }
 
 #csv {

@@ -48,7 +48,7 @@
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input id="email" type="email" name="email" aria-required="true" required/>
+                        <input id="email" type="email" name="email" aria-required="true" required data-type="email"/>
                     </li>
                     <p class="note">NOTE: We'll never share your email, promise</p>
                     <li>
@@ -63,7 +63,7 @@
                 <ul>
                     <li>
                         <label for="card_number">Card Number</label>
-                        <input id="card_number" name="card number" type="text" pattern="[0-9]{13,16}" aria-required="true" required/>
+                        <input id="card_number" name="card_number" type="text" pattern="[0-9]{13,16}" aria-required="true" required/>
                     </li>
                     <div class="cards">
                         <p class="note">Select your card</p>
@@ -79,7 +79,7 @@
                     <div class="valid" "invalid"></div>
                     <li class="cf">
                         <label for="security_code">Security Code</label>
-                        <input id="security_code" class="code" aria-required="true" required pattern="[0-9]{3,4}"/>
+                        <input id="security_code" class="code" aria-required="true" name="security_code" required pattern="[0-9]{3,4}"/>
                     </li>
                     <div id="csv" alt="back of credit card showing where the csv is located"></div>
                     <label>Expiration Date</label>
@@ -124,8 +124,7 @@
             </fieldset>
             <button id="button" type="submit" name="submit" value="create your portfolio" >Create your portfolio </button>
         </form>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
