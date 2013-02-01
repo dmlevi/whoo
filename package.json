@@ -1,0 +1,7 @@
+{
+  "name": "whoo",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt-contrib-mincss": "~0.3.2"
+  }
+}
