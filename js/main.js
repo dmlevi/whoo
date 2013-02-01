@@ -3,8 +3,6 @@
 
     var accountNumber = document.getElementById("card_number").value;
 
-    console.log(accountNumber);
-
     if (/^5[1-5]/.test(accountNumber)) {
       document.getElementById("mastercard").setAttribute("checked");
     }
@@ -22,7 +20,6 @@
 
       document.getElementById("discover").setAttribute("checked");
     }
-
   }
 
   document.getElementById("card_number").addEventListener('keyup',getCreditCardType);
@@ -38,8 +35,6 @@
         });
 
   	   $('#form').validate();
-
       } // complete
   }]); //.load
-
 })(); // end anonymous function and call it

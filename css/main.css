@@ -619,18 +619,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
 /*
  * Image replacement
  */
@@ -894,7 +882,7 @@ ul {
     padding: 30px 35px;
 }
 
-li label:first-of-type {
+label {
     display: block;
     font-size: 12px;
     color: #5A5A5A;
@@ -1022,10 +1010,6 @@ ul, li input{
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-}
-
-label.error {
-    position: relative;
 }
 
 #label_sample {

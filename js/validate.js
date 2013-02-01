@@ -1,7 +1,3 @@
-
-
-// Place any jQuery/helper plugins in here.
-
 /*! jQuery Validation Plugin - v1.10.0 - 9/7/2012
 * https://github.com/jzaefferer/jquery-validation
 * Copyright (c) 2012 JÃ¶rn Zaefferer; Licensed MIT, GPL */
