@@ -947,6 +947,14 @@ input[type="radio"] {
     width: 1px;
 }
 
+#select {
+    text-indent: -9999px;
+}
+
+.no-js #select {
+    text-indent: 0;
+}
+
 .cards {
     float: right;
     margin-top: -44px;
