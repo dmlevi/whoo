@@ -1,6 +1,7 @@
  <!DOCTYPE html>
 <html class="no-js">
-<head>
+    <head>
+        <meta charset="utf-8">
         <title>Whoo!</title>
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -8,52 +9,52 @@
     </head>
     <body>
         <form role="main" id="form">
-            <header role="banner">
-                <h1 title="sign up for whoo!">Sign up for Whoo!</h1>
+            <fieldset>
+                <header role="banner">
+                <h1>Sign up for Whoo!</h1>
                 <p>50 projects, 500 images, 10 videos, domain binding, and technical support.</p>
             </header>
-            <fieldset>
                 <legend><span class="number">1</span>First, name your portfolios</legend>
                 <ul>
                     <li>
                         <label for="portfolio_title">Portfolio title</label>
-                        <input id="portfolio_title" type="text" name="portfolio_title" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
+                        <input id="portfolio_title" type="text" name="portfolio_title" aria-required="true" required/>
                     </li>
                     <li>
                         <label for="portfolio_address">Portfolio address</label>
                         <label for="portfolio_address" id="label_sample">.sample.com</label>
-                        <input id="portfolio_address" type="text" name="portfolio_address" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
+                        <input id="portfolio_address" type="text" name="portfolio_address" aria-required="true" required/>
                     </li>
                 </ul>
-            </fieldset>
+            </fieldset> <!-- end fieldset -->
             <fieldset>
                 <legend><span class="number">2</span>Now, enter your account details</legend>
                 <ul>
                     <li>
                         <label for="name">Name</label>
-                        <input id="name" type="text" name="name" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/>
+                        <input id="name" type="text" name="name" aria-required="true" required />
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input id="email" type="email" name="email" aria-required="true" required data-type="email"/>
+                        <input id="email" type="email" name="email" aria-required="true" required />
                     </li>
-                    <p class="note">NOTE: We'll never share your email, promise</p>
+                    <label for="email" class="note">NOTE: We'll never share your email, promise</label>
                     <li>
                         <label for="password">Password</label>
-                        <input id="password" type="password" name="password" aria-required="true" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
+                        <input id="password" type="password" name="password" aria-required="true" required/>
                     </li>
                 </ul>
-            </fieldset>
+            </fieldset> <!-- end fieldset -->
             <fieldset>
                 <legend><span class="number">3</span>Finally, enter your payment information</legend>
                 <a href="http://www.paypal.com/" id="paypal" type="url">Use PayPal</a>
                 <ul>
                     <li>
                         <label for="card_number">Card Number</label>
-                        <input id="card_number" name="card_number" type="text" pattern="[0-9]{13,16}" aria-required="true" required/>
+                        <input id="card_number" name="card_number" type="text" aria-required="true" required/>
                     </li>
-                    <div class="cards">
-                        <p class="note" id="select">Select your card</p>
+                    <fieldset class="cards">
+                        <legend class="note" id="select">Select your card</legend>
                         <input type="radio" id="amex" name="creditcard" value="amex">
                         <label for="amex" class="amex">amex</label>
                         <input type="radio" name="creditcard" id="visa" value="visa">
@@ -62,13 +63,11 @@
                         <label for="discover" class="discover">discover</label>
                         <input type="radio" name="creditcard" value="mastercard" id="mastercard">
                         <label for="mastercard" class="mastercard">mastercard</label>
-                    </div>
-                    <div class="valid" "invalid"></div>
-                    <li class="cf">
+                    </fieldset>
+                    <li class="cf" id="csv">
                         <label for="security_code">Security Code</label>
-                        <input id="security_code" class="code" aria-required="true" name="security_code" required pattern="[0-9]{3,4}"/>
+                        <input id="security_code" class="code" aria-required="true" name="security_code" required/>
                     </li>
-                    <div id="csv" alt="back of credit card showing where the csv is located"></div>
                     <label for="month">Expiration Date</label>
                     <select name="month" aria-required="true" required>
                         <option selected="selected" disabled="disabled">Month</option>
@@ -106,10 +105,10 @@
                         <option value="2029">2029</option>
                         <option value="2030">2030</option>
                     </select>
-                    <div id="lock" alt="icon of lock demonstrating security"></div>
+                    <img id="lock" alt="icon of lock demonstrating security"></img>
                 </ul>
             </fieldset>
-            <button id="button" type="submit" name="submit" value="create your portfolio" >Create your portfolio </button>
+            <button id="button" type="submit" name="submit">Create your portfolio</button>
         </form>
         <script src="public/global.min.js"></script>
     </body>
